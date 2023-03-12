@@ -1,0 +1,89 @@
+.form-container{
+    margin-inline: auto;
+    color: #666;
+}
+.form-content{
+    text-align: center;
+    width: 70%;
+    height: 100%;
+    margin-inline: auto;
+    position: relative;
+
+}
+#contact-form {
+    background-color: #F4F9FF;
+    padding: 55px 40px;
+    border-radius: 4px;
+}
+.form-row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.form-row .personal-info{
+    width: calc(100%/3);
+    padding-inline: 15px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.form-row .personal-info input{
+    width: 100%;
+}
+.form-row .other-info {
+    width: 100%;
+    padding-inline: 27px;
+
+}
+.form-row .other-info input{
+    width: 100%;
+}
+.other-info textarea{
+    background: #fff none repeat scroll 0 0;
+    box-shadow: none;
+    height: 200px;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.form-row .form-button{
+    margin-block: 0;
+    width: 100%;
+    padding-block: 0;
+}
+.form-row .form-button .text-center{
+    padding-block: 0;
+    margin-block: 0;
+
+}
+.form-row .form-button .text-center input{
+    margin-block: 0;
+}
+#contact-form .form-control{
+    padding: 13px 23px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 30px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1rem;
+    font-weight: 400;
+    appearance: none;
+    color: #212529;
+    background-clip: padding-box;
+    transition: border .15s ease-in-out;
+
+}
+#contact-form .form-control:focus{
+    border:1px solid #6168ff;
+}
+.form-button .text-center input:hover{
+    background-color: #212a42;
+  border: 2px solid #212a42;
+    
+
+}

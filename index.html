@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/topdeals.css" />
+    <link rel="stylesheet" href="CSS/services.css" />
+    <link rel="stylesheet" href="CSS/chooseus.css" />
+    <link rel="stylesheet" href="CSS/gallery.css" />
+    <link rel="stylesheet" href="CSS/package.css" />
+    <link rel="stylesheet" href="CSS/testimonial.css" />
+    <link rel="stylesheet" href="CSS/blog.css" />
+    <link rel="stylesheet" href="CSS/form.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/mediaQuerry.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <title>Nour - Tour & Travel Agency</title>
+  </head>
+  <body>
+    <!-- NAVIGATION START -->
+    <header id="header1">
+      <div id="navigation">
+        <!-- logo -->
+        <div class="site-logo">
+          <a href="index.html">
+            <img src="logo.png" alt="LOGO" />
+          </a>
+        </div>
+        <!-- logo end -->
+
+        <!-- menu-icon -->
+        <button class="menu-btn" id="open-menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars changed-color"></i>
+        </button>
+        <button
+          class="menu-btn"
+          id="close-menu"
+          onclick="closeMenu()"
+          onblur="closeMenu()"
+        >
+          <i class="fa-solid fa-bars changed-color"></i>
+        </button>
+
+        <!-- navbar content -->
+        <nav id="main-menu">
+          <ul>
+            <li><a href="#home" class="nav-link">home</a></li>
+            <li><a href="#servive" class="nav-link">service</a></li>
+            <li><a href="#top_deals" class="nav-link">top deal</a></li>
+            <li><a href="#gallery" class="nav-link">gallery</a></li>
+            <li>
+              <a href="#" class="nav-link"
+                >package<span class="header-arrow"
+                  ><i class="fa-solid fa-caret-right"></i></span
+              ></a>
+              <ul>
+                <li><a href="#package">package deal</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-link"
+                >blog<span class="header-arrow"
+                  ><i class="fa-solid fa-caret-right"></i></span
+              ></a>
+              <ul>
+                <li><a href="#blog">standard blog</a></li>
+                <li><a href="#blog">blog details</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact" class="nav-link">contact</a></li>
+          </ul>
+        </nav>
+        <!-- header end -->
+      </div>
+    </header>
+    <!-- NAVIGATION END -->
+
+    <!-- START IMAGE SLIDER -->
+    <div class="slider-container" id="home">
+      <!-- color palette -->
+      <div class="style-switcher" id="chose-color">
+        <h2>color palette</h2>
+        <a
+          href="#"
+          class="setting-icon change-bgcolor"
+          onclick="colorSlide()"
+          onblur="slideClose()"
+          id="open"
+        >
+          <i class="fa fa-cog fa-spin change-bgcolor" aria-hidden="true"></i>
+        </a>
+        <a
+          href="#"
+          class="setting-icon change-bgcolor"
+          onclick="slideClose()"
+          id="close"
+        >
+          <i class="fa fa-cog fa-spin change-bgcolor" aria-hidden="true"></i>
+        </a>
+        <div class="select-color">
+          <ul id="select-colors">
+            <li><a href="#" id="style1" class="pick-color"></a></li>
+            <li><a href="#" id="style2" class="pick-color"></a></li>
+            <li><a href="#" id="style3" class="pick-color"></a></li>
+            <li><a href="#" id="style4" class="pick-color"></a></li>
+            <li><a href="#" id="style5" class="pick-color"></a></li>
+            <li><a href="#" id="style6" class="pick-color"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- arrow -->
+      <button
+        id="up-arrow"
+        onclick="arrow_click(-1)"
+        class="arrow changed-color"
+      >
+        <i class="fa-solid fa-arrow-up changed-color"></i>
+      </button>
+      <button id="down-arrow" onclick="arrow_click(1)" class="arrow">
+        <i class="fa-solid fa-arrow-down changed-color"></i>
+      </button>
+
+      <!-- images -->
+      <div class="slider-box">
+        <!-- 1 -->
+        <div class="img-slider img">
+          <div class="slider-content">
+            <p class="slide-para">we are here to make your travel comfort.</p>
+            <h1 class="slide-heading">
+              travel most beautiful places <br />with us
+            </h1>
+            <button class="btn change-bgcolor">discover now</button>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="img-slider img1">
+          <div class="slider-content">
+            <p class="slide-para">we are here to make your travel comfort.</p>
+            <h1 class="slide-heading">make your trip amazing <br />with us</h1>
+            <button class="btn change-bgcolor">discover now</button>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="img-slider img2">
+          <div class="slider-content">
+            <p class="slide-para">we are here to make your travel comfort.</p>
+            <h1 class="slide-heading">
+              travel most beautiful places <br />with ease
+            </h1>
+            <button class="btn change-bgcolor">discover now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END IMAGE SLIDER -->
+
+    <!-- START WHY CHOOSE US-->
+    <section class="choose-us" id="contact_us">
+      <!-- start -->
+      <div class="complete-width">
+        <div class="main-flex">
+          <div class="flex-content">
+            <div class="two-content">
+              <div class="one-content">
+                <i class="material-icons changed-color">local_activity</i>
+                <h3>Activities</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                  veniam similique deserunt veritatis placeat itaque
+                </p>
+              </div>
+              <div class="one-content">
+                <i class="material-icons changed-color">route</i>
+                <h3>Travel arrangements</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                  veniam similique deserunt veritatis placeat itaque
+                </p>
+              </div>
+            </div>
+            <div class="two-content">
+              <div class="one-content">
+                <i class="material-icons changed-color"
+                  >settings_accessibility</i
+                >
+                <h3>private guide</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                  veniam similique deserunt veritatis placeat itaque
+                </p>
+              </div>
+              <div class="one-content">
+                <i class="material-icons changed-color">location_on</i>
+                <h3>location manager</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                  veniam similique deserunt veritatis placeat itaque
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-img">
+            <div class="choose-image">
+              <img src="girl.jpg" alt="choose image" />
+              <a class="pbtn" href="#contact_us" onclick="openFrame()">
+                <i class="material-icons change-bgcolor">slow_motion_video</i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+    </section>
+    <!-- END WHY CHOOSE US -->
+
+    <!-- START TOP DEALS -->
+    <section class="section top_deals" id="top_deals">
+      <div class="container">
+        <div class="deals-heading">
+          <div class="destination-padding">
+            <span class="bg-title">destinations</span>
+            <h2 class="changed-color">destinations</h2>
+            <p>Travel Most Popular Place</p>
+          </div>
+        </div>
+
+        <!-- form list -->
+        <div id="deals_container">
+          <button class="slide_arrow" id="right" onclick="right()">
+            <i class="fa-regular fa-greater-than slid-icon change-bgcolor"></i>
+          </button>
+          <button class="slide_arrow" id="left" onclick="left()">
+            <i class="fa-regular fa-less-than slid-icon change-bgcolor"></i>
+          </button>
+          <!-- SCROLLER START -->
+          <div class="image_container">
+            <div class="container-owl">
+              <!-- 1 -->
+              <div class="owl-item">
+                <div class="single-deal">
+                  <a href="#">
+                    <figure class="deal-img">
+                      <img src="deals/img1.jpg" alt="" />
+                    </figure>
+                    <figcaption>
+                      <h4>Burj Khalifa, Dubai</h4>
+                      <span class="tr-price">$4.5k</span>
+                      <p>
+                        <i class="fa-regular fa-clock"></i>
+                        10 Days Trip
+                      </p>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="owl-item">
+                <div class="single-deal">
+                  <a href="#">
+                    <figure class="deal-img">
+                      <img src="deals/img2.jpg" alt="" />
+                    </figure>
+                    <figcaption>
+                      <h4>New York City, USA</h4>
+                      <span class="tr-price">$4.5k</span>
+                      <p>
+                        <i class="fa-regular fa-clock"></i>
+                        10 Days Trip
+                      </p>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="owl-item">
+                <div class="single-deal">
+                  <a href="#">
+                    <figure class="deal-img">
+                      <img src="deals/img3.jpg" alt="" />
+                    </figure>
+                    <figcaption>
+                      <h4>Rome, Italy</h4>
+                      <span class="tr-price">$4.5k</span>
+                      <p>
+                        <i class="fa-regular fa-clock"></i>
+                        10 Days Trip
+                      </p>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="owl-item">
+                <div class="single-deal">
+                  <a href="#">
+                    <figure class="deal-img">
+                      <img src="deals/img4.jpg" alt="" />
+                    </figure>
+                    <figcaption>
+                      <h4>Burj Khalifa, Dubai</h4>
+                      <span class="tr-price">$4.5k</span>
+                      <p>
+                        <i class="fa-regular fa-clock"></i>
+                        10 Days Trip
+                      </p>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="owl-item">
+                <div class="single-deal">
+                  <a href="#">
+                    <figure class="deal-img">
+                      <img src="deals/img5.jpg" alt="" />
+                    </figure>
+                    <figcaption>
+                      <h4>Burj Khalifa, Dubai</h4>
+                      <span class="tr-price">$4.5k</span>
+                      <p>
+                        <i class="fa-regular fa-clock"></i>
+                        10 Days Trip
+                      </p>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div
+                class="owl-item"
+                style="margin-inline-end: 0; padding-inline-end: 0"
+              >
+                <div class="single-deal">
+                  <a href="#">
+                    <figure class="deal-img">
+                      <img src="deals/img6.jpg" alt="" />
+                    </figure>
+                    <figcaption>
+                      <h4>Kuala Lumpur, Malaysia</h4>
+                      <span class="tr-price">$4.5k</span>
+                      <p>
+                        <i class="fa-regular fa-clock"></i>
+                        10 Days Trip
+                      </p>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+              <!-- end scroll-->
+            </div>
+          </div>
+          <!-- SCROLLER END -->
+        </div>
+      </div>
+    </section>
+    <!-- END TOP DEALS -->
+
+    <!-- START SERVICES-->
+    <section id="servive" class="section">
+      <div class="container">
+        <div class="heading">
+          <div class="padding">
+            <span class="bg-title" style="letter-spacing: 5px">services</span>
+            <h2 class="changed-color">services</h2>
+            <p>what we offer for you</p>
+          </div>
+        </div>
+
+        <!-- flex bos -->
+        <div class="service-container">
+          <!-- 1 -->
+          <div class="service-item">
+            <div class="service-padding">
+              <div class="service-icon">
+                <i class="material-icons changed-color">king_bed</i>
+              </div>
+              <div class="service-content">
+                <h4>Delux Room</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                  veniam similique deserunt veritatis placeat
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="service-item">
+            <div class="service-padding">
+              <div class="service-icon">
+                <i class="material-icons changed-color">fastfood</i>
+              </div>
+              <div class="service-content">
+                <h4>delicious food</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                  veniam similique deserunt veritatis placeat
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="service-item">
+            <div class="service-padding">
+              <div class="service-icon">
+                <i class="material-icons changed-color">local_taxi</i>
+              </div>
+              <div class="service-content">
+                <h4>airport taxi</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                  veniam similique deserunt veritatis placeat
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="service-item">
+            <div class="service-padding">
+              <div class="service-icon">
+                <i class="material-icons changed-color">wifi</i>
+              </div>
+              <div class="service-content">
+                <h4>free wifi</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                  veniam similique deserunt veritatis placeat
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="service-item">
+            <div class="service-padding">
+              <div class="service-icon">
+                <i class="material-icons changed-color">medication</i>
+              </div>
+              <div class="service-content">
+                <h4>free medication</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                  veniam similique deserunt veritatis placeat
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="service-item">
+            <div class="service-padding">
+              <div class="service-icon">
+                <i class="material-icons changed-color">support_agent</i>
+              </div>
+              <div class="service-content">
+                <h4>tour guide</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                  veniam similique deserunt veritatis placeat
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
+    </section>
+    <!-- END SERVICES -->
+
+    <!-- START TOUR GALLERY -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="heading">
+          <div class="padding">
+            <span class="bg-title" style="letter-spacing: 5px">gallery</span>
+            <h2 class="changed-color">tour guide</h2>
+            <p>Best Tourist's Shared Photos</p>
+          </div>
+        </div>
+
+        <!-- start gallert image  -->
+        <div class="gallery-container">
+          <div class="gallery-padding">
+            <!-- start item -->
+            <!-- 1 -->
+            <div class="gallery-item">
+              <div class="gallery-content">
+                <img class="image" src="GALLERY\img1.jpg" alt="" />
+                <a href="#gallery" class="gallery_enlarge_icon">
+                  <span class="material-icons"> arrow_forward </span>
+                </a>
+                <h4>Eiffel Tower, France</h4>
+              </div>
+            </div>
+            <!-- 2 -->
+
+            <div class="gallery-item">
+              <div class="gallery-content">
+                <img src="GALLERY\img2.jpg" alt="" />
+                <a href="#gallery" class="gallery_enlarge_icon">
+                  <span class="material-icons"> arrow_forward </span>
+                </a>
+                <h4>Machu Picchu, Peru</h4>
+              </div>
+            </div>
+            <!-- 3 -->
+
+            <div class="gallery-item">
+              <div class="gallery-content">
+                <img src="GALLERY\img3.jpg" alt="" />
+                <a href="#gallery" class="gallery_enlarge_icon">
+                  <span class="material-icons"> arrow_forward </span>
+                </a>
+                <h4>The Grand Canyon</h4>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="gallery-item">
+              <div class="gallery-content">
+                <img src="GALLERY\img4.jpg" alt="" />
+                <a href="#gallery" class="gallery_enlarge_icon">
+                  <span class="material-icons"> arrow_forward </span>
+                </a>
+                <h4>Pacific Ocean, New Zealand</h4>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="gallery-item">
+              <div class="gallery-content">
+                <img src="GALLERY\img5.jpg" alt="" />
+                <a href="#gallery" class="gallery_enlarge_icon">
+                  <span class="material-icons"> arrow_forward </span>
+                </a>
+                <h4>The Colosseum, Rome</h4>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="gallery-item">
+              <div class="gallery-content">
+                <img src="GALLERY\img6.jpg" alt="" />
+                <a href="#gallery" class="gallery_enlarge_icon">
+                  <span class="material-icons"> arrow_forward </span>
+                </a>
+                <h4>Thames River, London</h4>
+              </div>
+            </div>
+            <!-- end item -->
+          </div>
+        </div>
+        <!-- end gallert image  -->
+      </div>
+    </section>
+    <!-- END TOUR GALLERY -->
+
+    <!-- START PACKAGE -->
+    <section class="section" id="package">
+      <div class="container">
+        <!-- headintg start -->
+        <div class="heading">
+          <div class="padding">
+            <span class="bg-title" style="letter-spacing: 5px">package</span>
+            <h2 class="changed-color">popular package</h2>
+            <p>the best of our packages</p>
+          </div>
+        </div>
+        <!-- end heading -->
+
+        <!-- start package img -->
+        <div class="package-container">
+          <div class="package-padding">
+            <!-- start item -->
+            <!-- 1 -->
+            <div class="package-item">
+              <div class="package-content">
+                <a href="tour-details.html">
+                  <div class="pack_image">
+                    <img src="package/img1.jpg" alt="" />
+                  </div>
+
+                  <div class="package-hover">
+                    <span class="pack_price change-bgcolor">$236 / Person</span>
+                    <div class="tour-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <h5>Brazil Sea Beach</h5>
+                    <div class="pac-meta">
+                      <span class="psingle-meta">
+                        <i class="fa-regular fa-clock"></i> 3 days</span
+                      >
+
+                      <span class="psingle-meta">
+                        <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                        Brazil</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="package-item">
+              <div class="package-content">
+                <a href="tour-details.html">
+                  <div class="pack_image">
+                    <img src="package/img2.jpg" alt="" />
+                  </div>
+
+                  <div class="package-hover">
+                    <span class="pack_price change-bgcolor">$350 / Person</span>
+                    <div class="tour-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <h5>Brazil Sea Beach</h5>
+                    <div class="pac-meta">
+                      <span class="psingle-meta">
+                        <i class="fa-regular fa-clock"></i> 3 days</span
+                      >
+
+                      <span class="psingle-meta">
+                        <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                        Brazil</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="package-item">
+              <div class="package-content">
+                <a href="tour-details.html">
+                  <div class="pack_image">
+                    <img class="img-fluid" src="package/img3.jpg" alt="" />
+                  </div>
+
+                  <div class="package-hover">
+                    <span class="pack_price change-bgcolor">$450 / Person</span>
+                    <div class="tour-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <h5>Brazil Sea Beach</h5>
+                    <div class="pac-meta">
+                      <span class="psingle-meta">
+                        <i class="fa-regular fa-clock"></i> 3 days</span
+                      >
+
+                      <span class="psingle-meta">
+                        <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                        Brazil</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- end iem -->
+          </div>
+        </div>
+        <!-- end package img -->
+      </div>
+    </section>
+    <!-- END PACKAGEK -->
+
+    <!-- START TESTIMONIAL -->
+    <section class="section" id="testimonial">
+      <div class="container">
+        <!-- headintg start -->
+        <div class="heading">
+          <div class="padding">
+            <span class="bg-title" style="letter-spacing: 5px"
+              >testimonials</span
+            >
+            <h2 class="changed-color">testimonials</h2>
+            <p>what saying our happy coustomers</p>
+          </div>
+        </div>
+        <!-- end heading -->
+        <!-- container start -->
+        <div class="outer-container">
+          <div class="inner-container">
+            <!-- 1 -->
+            <div class="testimonial-item">
+              <div class="single-testimonial">
+                <div class="test-img">
+                  <img
+                    src="testimonial/img1.png"
+                    width="80"
+                    alt="review image"
+                    class="change-bgcolor"
+                  />
+                </div>
+                <div class="testimonial-content">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                  Praesent bibendum dolor eros imperdiet amet hendrerit
+                </div>
+
+                <div class="testimonial-bottom">
+                  <h3 class="title">Jubayr Hani</h3>
+                  <span class="designation">CO FOUNDER</span>
+                  <div class="test-rating">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="testimonial-item">
+              <div class="single-testimonial">
+                <div class="test-img">
+                  <img
+                    src="testimonial/img2.png"
+                    width="80"
+                    alt="review image"
+                  />
+                </div>
+                <div class="testimonial-content">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                  Praesent bibendum dolor eros imperdiet amet hendrerit
+                </div>
+
+                <div class="testimonial-bottom">
+                  <h3 class="title">Jubayr Hani</h3>
+                  <span class="designation">CO FOUNDER</span>
+                  <div class="test-rating">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="testimonial-item">
+              <div class="single-testimonial">
+                <div class="test-img">
+                  <img
+                    src="testimonial/img3.png"
+                    width="80"
+                    alt="review image"
+                  />
+                </div>
+                <div class="testimonial-content">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                  Praesent bibendum dolor eros imperdiet amet hendrerit
+                </div>
+
+                <div class="testimonial-bottom">
+                  <h3 class="title">Jubayr Hani</h3>
+                  <span class="designation">CO FOUNDER</span>
+                  <div class="test-rating">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="testimonial-item">
+              <div class="single-testimonial">
+                <div class="test-img">
+                  <img
+                    src="testimonial/img1.png"
+                    width="80"
+                    alt="review image"
+                  />
+                </div>
+                <div class="testimonial-content">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                  Praesent bibendum dolor eros imperdiet amet hendrerit
+                </div>
+
+                <div class="testimonial-bottom">
+                  <h3 class="title">Jubayr Hani</h3>
+                  <span class="designation">CO FOUNDER</span>
+                  <div class="test-rating">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="testimonial-item">
+              <div class="single-testimonial">
+                <div class="test-img">
+                  <img
+                    src="testimonial/img2.png"
+                    width="80"
+                    alt="review image"
+                  />
+                </div>
+                <div class="testimonial-content">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                  Praesent bibendum dolor eros imperdiet amet hendrerit
+                </div>
+
+                <div class="testimonial-bottom">
+                  <h3 class="title">Jubayr Hani</h3>
+                  <span class="designation">CO FOUNDER</span>
+                  <div class="test-rating">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="testimonial-item">
+              <div class="single-testimonial">
+                <div class="test-img">
+                  <img
+                    src="testimonial/img3.png"
+                    width="80"
+                    alt="review image"
+                  />
+                </div>
+                <div class="testimonial-content">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                  Praesent bibendum dolor eros imperdiet amet hendrerit
+                </div>
+
+                <div class="testimonial-bottom">
+                  <h3 class="title">Jubayr Hani</h3>
+                  <span class="designation">CO FOUNDER</span>
+                  <div class="test-rating">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- container end -->
+        <button class="testimonial-arrow" id="left-arrow" onclick="moveLeft()">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button
+          class="testimonial-arrow"
+          id="right-arrow"
+          onclick="moveRight()"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- END TESTIMONIAL -->
+
+    <!-- START BLOG -->
+    <section class="section" id="blog">
+      <div class="container">
+        <!-- headintg start -->
+        <div class="heading">
+          <div class="padding">
+            <span class="bg-title" style="letter-spacing: 5px">blogs</span>
+            <h2 class="changed-color">latest news</h2>
+            <p>our latest posts for travelle</p>
+          </div>
+        </div>
+        <!-- end heading -->
+        <!-- container start -->
+        <div class="blog-container">
+          <div class="item-container">
+            <!-- 1 -->
+            <div class="blog-item">
+              <div class="blog-img">
+                <img src="blogs/img1.jpg" alt="blog image" />
+              </div>
+              <div class="blog-content">
+                <div class="blog-icon">
+                  <span>
+                    <i class="fa-regular fa-clock"></i>
+                    10 Jan, 2022
+                  </span>
+                </div>
+
+                <h4>Young girl on steps of house on tree at sunrise</h4>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="blog-item">
+              <div class="blog-img">
+                <img src="blogs/img2.jpg" alt="blog image" />
+              </div>
+              <div class="blog-content">
+                <div class="blog-icon">
+                  <span>
+                    <i class="fa-regular fa-clock"></i>
+                    20 Jan, 2022
+                  </span>
+                </div>
+
+                <h4>Top view concept image of businessman</h4>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="blog-item">
+              <div class="blog-img">
+                <img src="blogs/img3.jpg" alt="blog image" />
+              </div>
+              <div class="blog-content">
+                <div class="blog-icon">
+                  <span>
+                    <i class="fa-regular fa-clock"></i>
+                    30 Jan, 2022
+                  </span>
+                </div>
+
+                <h4>A man seeing sea and sky Standing on Mountain</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- container end -->
+      </div>
+    </section>
+    <!-- END BLOG -->
+
+    <!--START  CONTACT US -->
+    <section class="section" id="contact">
+      <div class="container">
+        <!-- headintg start -->
+        <div class="heading">
+          <div class="padding">
+            <span class="bg-title" style="letter-spacing: 5px">contact</span>
+            <h2 class="changed-color">contact us</h2>
+            <p>
+              if you have any question <br />
+              drop a message
+            </p>
+          </div>
+        </div>
+        <!-- end heading -->
+        <!-- form start -->
+        <div class="form-container">
+          <div class="form-content">
+            <form action="contact.php" method="post" id="contact-form">
+              <div class="form-row">
+                <!-- name -->
+                <div class="personal-info info-start">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    class="form-control"
+                    id="first-name"
+                    required="required"
+                  />
+                </div>
+                <!-- email -->
+                <div class="personal-info">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    class="form-control"
+                    id="first-email"
+                    required="required"
+                  />
+                </div>
+                <!-- phone -->
+                <div class="personal-info info-end">
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Phone"
+                    class="form-control"
+                    id="phone"
+                    required="required"
+                  />
+                </div>
+                <!-- subject -->
+                <div class="other-info">
+                  <input
+                    type="text"
+                    name="subject"
+                    class="form-control"
+                    required="required"
+                    placeholder="Subject"
+                    id="subject"
+                  />
+                </div>
+                <!-- message -->
+                <div class="other-info">
+                  <textarea
+                    style="height: 200px"
+                    name="message"
+                    id="description"
+                    placeholder="Your Message"
+                    class="form-control"
+                    rows="6"
+                    required="required"
+                  ></textarea>
+                </div>
+                <!-- button -->
+                <div class="form-button">
+                  <div class="actions text-center">
+                    <input
+                      type="submit"
+                      value="Send message"
+                      name="submit"
+                      id="submitButton"
+                      class="btn btn-lg btn-contact-bg change-bgcolor"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- form end -->
+      </div>
+    </section>
+    <!-- END CONTACT US -->
+
+    <!-- START FOOTER -->
+    <div class="footer change-bgcolor">
+      <div class="footer-container">
+        <!-- top footer start -->
+        <div class="footer-top">
+          <div class="top-content">
+            <!-- col-1 -->
+            <div class="footer-col">
+              <div class="footer-widget">
+                <img
+                  src="foot-logo.png"
+                  class="foot-logo"
+                  alt="footer logo"
+                  width="150"
+                />
+
+                <div class="cont_info">
+                  <p>
+                    <i class="material-icons">phone</i>
+                    <span>+956 542 6584</span>
+                  </p>
+
+                  <p>
+                    <i class="material-icons">email</i>
+                    <span>example@example.com</span>
+                  </p>
+
+                  <p>
+                    <i class="material-icons">location_on</i>
+                    <span
+                      >203 Fake St. Mountain View, San Francisco, California,
+                      USA</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- col-2 -->
+            <div class="footer-col">
+              <div class="footer-widget">
+                <h3 class="fot-title">About Us</h3>
+                <ul>
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Travel Blog &amp; Tips</a></li>
+                  <li><a href="#">Gallerying With Us</a></li>
+                  <li><a href="#">Tour Guid</a></li>
+                  <li><a href="#">Be Our Partner</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- col-3 -->
+            <div class="footer-col">
+              <div class="footer-widget">
+                <h3 class="fot-title">Support</h3>
+                <ul>
+                  <li><a href="#">Customer Support</a></li>
+                  <li><a href="#">Privacy &amp; Policy</a></li>
+                  <li><a href="#">Terms &amp; Condition</a></li>
+                  <li><a href="#">Forum</a></li>
+                  <li><a href="#">Tour Guid</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- col-4 -->
+            <div class="footer-col">
+              <div class="footer-widget">
+                <h3 class="fot-title">Subscribe Newsletter</h3>
+                <p>
+                  By subscribing to our mailing list you will always be updated
+                </p>
+                <form class="subscribe-form mt-3">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control form--control"
+                      name="email"
+                      placeholder="Enter Your Email"
+                    />
+                  </div>
+                  <button class="btn-contact-bg" type="submit">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- top footer end -->
+        <!-- bottom footer start -->
+        <div class="footer-bottom text-center">
+          <p class="copyright_text">
+            Copyright @ 2021 <a href="#">Nour</a> all right reserved.
+          </p>
+          <ul class="foot_social_link">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!-- bottom footer end -->
+      </div>
+    </div>
+    <!-- END FOOTER -->
+
+    <!-- JAVASCRIPT -->
+    <script src="JS/landing.js"></script>
+    <script src="JS/topdeal.js"></script>
+    <script src="JS/gallery.js"></script>
+    <script src="JS/testimonial.js"></script>
+
+    <!-- up-arrow -->
+    <!-- youtube frame -->
+    <div class="YouTubePopUp-Wrap" onclick="farmeClose()">
+      <div class="YouTubePopUp-Content">
+        <iframe
+          src="https://www.youtube.com/embed/OVMuvfxbT1o?autoplay=0"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>

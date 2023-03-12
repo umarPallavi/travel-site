@@ -1,0 +1,125 @@
+
+.footer {
+  width: 100%;
+  padding: 250px 0 40px;
+  background-color: #00102a;
+  color: #fff;
+  clip-path: polygon(0 250px, 100% 0, 100% 100%, 0 100%);
+}
+.footer .footer-container {
+  padding-inline: 12px;
+  margin-inline: 98px;
+}
+.footer .footer-container .footer-top {
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgb(247, 243, 243, 0.3);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer-top .top-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-top .top-content .footer-col {
+  padding-inline: 15px;
+  width: calc(100% / 4);
+}
+.footer-col .footer-widget {
+  color: #fff;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.footer-widget .foot-logo {
+  margin-bottom: 25px;
+}
+.footer-widget  p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.cont_info i {
+  margin-right: 20px;
+  float: left;
+}
+.cont_info span {
+
+  display: block;
+  overflow: hidden;
+  line-height: 24px;
+}
+.footer .fot-title {
+    position: relative;
+    margin-bottom: 26px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.footer ul {
+    list-style-type: none;
+}
+.footer ul li {
+    line-height: 32px;
+    position: relative;
+}
+.footer ul li a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+.mt-3 {
+    margin-top: 1rem!important;
+}
+
+.footer .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 40px;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.footer .btn-contact-bg {
+    margin-top: 10px;
+    background-color: #6168FF;
+    border: 2px solid #6168FF;
+    color: #fff;
+    font-size: 13px;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    border-radius: 4px;
+    display: inline-block;
+    font-family: inherit;
+    line-height: inherit;
+    cursor: pointer;
+}
+ 
+.footer .text-center {
+    text-align: center!important;
+}
+.footer a{
+    text-decoration: none;
+    color: #fff;
+}
+.foot_social_link {
+    margin-top: 19px;
+    display: block;
+}
+.foot_social_link li a i{
+    color: #6168FF;
+    
+}
+.foot_social_link li {
+    display: inline-block;
+    margin: 0 7px;
+}

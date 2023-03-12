@@ -1,0 +1,125 @@
+
+.outer-container {
+  max-width: 100%;
+  overflow-x: scroll;
+  width: 1300px;
+  margin-inline: auto;
+  position: relative;
+  scroll-behavior: smooth;
+  display: block;
+}
+.outer-container::-webkit-scrollbar {
+  display: none;
+}
+.outer-container {
+  -ms-overflow-style: none;
+}
+
+.inner-container {
+  transition: all 0.25s ease 0s;
+  position: relative;
+  display: flex;
+  width: max-content;
+}
+.testimonial-item {
+  height: auto;
+  width: 428px;
+  margin-inline-end: 7px;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+}
+.single-testimonial {
+  color: #333;
+  padding: 40px 28px;
+  background-color: #f4f9ff;
+  border-radius: 4px;
+  position: relative;
+  margin: 33px 0;
+  text-align: center;
+}
+.single-testimonial .test-img {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.single-testimonial .test-img img {
+  max-width: 100%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 19px;
+  display: inline-block;
+  border: inherit;
+  box-shadow: 0 0 40px rgb(0 0 0 / 7%);
+  background-color: #fff;
+}
+.single-testimonial .test-img:after {
+  position: absolute;
+  bottom: 13px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  content: "";
+  background-image: url(quote-img.png);
+  background-color: #6168ff;
+  /* background-color: var(--afterBack, #6168ff); */
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 11px;
+}
+.testimonial-content {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 10px;
+}
+.testimonial-bottom {
+  margin-top: 20px;
+}
+.fa-solid{
+  cursor: pointer;
+
+}
+.testimonial-bottom .title {
+  display: block;
+  font-size: 19px;
+  color: #333;
+  text-transform: capitalize;
+  margin: 2px 0 3px 0;
+}
+.testimonial-bottom .designation {
+  margin: 3px 0 4px 0;
+}
+.testimonial-bottom .test-rating {
+  color: #ffc000;
+  font-size: 14px;
+  margin-block: 5px;
+}
+.testimonial-bottom .test-rating .list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+.testimonial-bottom .test-rating .list-inline-item {
+  display: inline-block;
+}
+/* testimonial arrow */
+
+.testimonial-arrow{
+    color: #333;
+    position: absolute;
+    transform: translateX(-50%);
+    border: none;
+    font-size: 17px;
+    background-color: #fff;
+    padding-inline: 3px;
+}
+#left-arrow{
+    left: 48%;
+
+}
+#right-arrow{
+    right: 48%;
+}

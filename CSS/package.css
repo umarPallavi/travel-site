@@ -1,0 +1,74 @@
+.package-container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.package-container .package-padding .package-item {
+  display: block;
+  width: calc(100% / 3);
+  margin: 0 0px 30px;
+  overflow: hidden;
+  position: relative;
+  padding-inline: 15px;
+
+}
+.package-item .package-content {
+  box-shadow: 0 0 20px rgb(0 0 0 / 3%);
+  border: 1px solid #ebe6de;
+  border-radius: 4px;
+}
+.package-item a{
+    color: #727272;
+    text-decoration: none
+}
+.package-item a .pack_image {
+  position: relative;
+  overflow: hidden;
+}
+.pack_image img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  height: auto
+}
+.package-hover{
+    padding: 30px;
+    position: relative;
+}
+.pack_price {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: -23px;
+    right: 10px;
+    background-color: #6168FF;
+    display: inline-block;
+    z-index: 9;
+    text-align: center;
+    border-radius: 30px;
+    padding: 12px 18px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 3%);
+    transition: .5s;
+}
+.pack_price:hover{
+    background-color: #212a42;
+}
+
+.package-hover .tour-rating {
+    color: #fec42d;
+    margin-bottom: 9px;
+}
+.package-hover h5{
+    margin-top: 0px;
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    font-weight: 700;
+    line-height: normal;
+}
+.psingle-meta {
+    margin-right: 5px;
+}
+.psingle-meta i{
+    color: #333;
+
+}
